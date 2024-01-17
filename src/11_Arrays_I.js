@@ -142,13 +142,16 @@ function getSentenceArr2(arr) {
     let str = ""; // Anfangswert
 
     for (let i = 0; i < arr.length; i++) {
-        str += arr[i] + GAP;
+        if(false) {
+            str += arr[i] + GAP;
+    } else {
+            str += arr[i] + PUNCT;
     }
 
     return str + PUNCT;
 }
 
-
+return str;
 
 
 // Modul: Ausgabe in Konsole : Test
@@ -156,5 +159,3 @@ function getSentenceArr2(arr) {
 function output(outputStr) {
     console.log(outputStr);
 }
-
-
